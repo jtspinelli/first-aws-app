@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "post-build": "copy src\\index.html out\\",
+    "post-build": "cp src/index.html out/",
     "start": "npm run build && npm run post-build && node out/server.js"
   },
   "author": "jtspinelli",
