@@ -1,0 +1,18 @@
+{
+  "name": "aws-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "post-build": "copy src\\index.html out\\",
+    "start": "npm run build && npm run post-build && node out/server.js"
+  },
+  "author": "jtspinelli",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "express": "^5.1.0"
+  }
+}
